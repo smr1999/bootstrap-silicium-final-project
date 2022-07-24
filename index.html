@@ -42,12 +42,40 @@
                         </li>
                     </ul>
                     <div class="d-flex justify-content-lg-end justify-content-start " style="width: 129px;">
-                        <button class="btn btn-primary">Search</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">Get started</button>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
+
+    <!-- Modalbox -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get start now!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="fullname"
+                                placeholder="Example : Mohammad@emaple.com">
+                        </div>
+                        
+                        <div class="col-12 mb-4">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </div>    
+                </form>
+                
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Header -->
     <div class="bg-white py-4">
@@ -58,7 +86,7 @@
                     <p class="mb-4 lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
                         ratione commodi odio doloremque rem voluptatum officia expedita.</p>
                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <button class="btn btn-primary" type="button">Get started</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">Get started</button>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
